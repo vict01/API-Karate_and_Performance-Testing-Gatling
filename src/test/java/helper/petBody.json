@@ -1,0 +1,92 @@
+[
+  {
+    "id": 27,
+    "name": "Zippy",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "photoUrls": [
+      "#ignore"
+    ],
+    "name": "Cow",
+    "id": 5,
+    "category": {
+      "name": "Cow",
+      "id": "#ignore"
+    },
+    "tags": [
+      {
+        "name": "#ignore",
+        "id": "#ignore"
+      }
+    ],
+    "status": "#ignore"
+  },
+  {
+    "id": 26,
+    "name": "Guard",
+    "category": {
+      "id": 1,
+      "name": "Dogs"
+    },
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 10,
+    "name": "Wonky",
+    "category": {
+      "id": 2,
+      "name": "Cats"
+    },
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "available"
+  },
+  {
+    "id": 10,
+    "name": "Ralph",
+    "category": {
+      "id": 4,
+      "name": "Lions"
+    },
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "available"
+  }
+]
