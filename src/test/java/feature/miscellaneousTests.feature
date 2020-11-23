@@ -3,7 +3,6 @@ Feature: Miscellaneous tests
   Background:
     * def javaMethod = Java.type('helper.Methods')
     * def method = new javaMethod()
-    * def collectionResponse = read('helper/petBody.json')
     * url 'https://petstore3.swagger.io/api/v3/pet/'
 
   @Scenario5

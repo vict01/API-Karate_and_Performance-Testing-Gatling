@@ -7,7 +7,7 @@ The test scope encompasses testing each type of methods for Pet information.
 ## Framework structure
 * src/test/java:
   
-  - Feature folder:
+  - feature folder:
     Contain the features files with the scenarios and its corresponding steps.
 
   - helper folder:
@@ -43,19 +43,19 @@ In this framework we used different components, which we break them down below w
 
 ### To run all tests together at once:
 1. In the project panel, right click on TestRunner class, pick up "Run TestRunner".
-   Note: In some IDE within the Runner class you can see a run symbol (button) next to the statements "public class <className>" through which you can execute the class.
+   Besides, in some IDE within the Java class you can see a run symbol (button) next to the statements "public class <className>" through which you can execute the class.
 
 2. Once test finish running, you'll be able to see the symbols/mark corresponding to failed / successful / warning
    in the left Junit panel, according to the results obtained in general. 
-   As well within the console log output, at the end you can see a section with a summary result for each feature and scenarios.
+   As well within the console log output, at the end of each feature run you can see a section with a summary result for such a feature.
 
 3. To see a readable and graphical report in HTML about testing result, just go to the "target/surefire-reports" folder in the project root path and open the  karate-summary.html file with any web browser, through this we can see a report for 3 views: summary, by features and by tags, just click on each option as appropriate. 
 
 4. In addition, there is much better and complete report located in: "target/cucumber-html-reports/js/overview-features.html", just open it with any web browser and navigate through links accordingly. 
 
 ### To run a specific feature file entirely (with all its scenarios):
-1. In the project panel, right click on any feature files > and pick up "Run Feature: <file name>" 
-   Note: In some IDE within the features files you can see a run symbol next to the statements "Feature" through which you can execute the tests.
+1. In the project panel, right click on any feature files > and pick up "Run Feature: <file name>". 
+   Besides, in some IDE within the features files you can see a run symbol next to the statements "Feature" through which you can execute the tests.
 2. From now on, take into account the points 2 and 3 in the previous section likewise. 
     
     Note: The karate-summary.html is replaced every time you run a feature, however also is generated an individual html report for each feature with the same name as the file. Not so for report mentioned in point 4 in the previous section.  
