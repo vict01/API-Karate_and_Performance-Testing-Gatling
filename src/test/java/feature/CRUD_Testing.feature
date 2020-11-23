@@ -29,6 +29,7 @@ Feature: Test of PetStore API
       | 01) Delete the pet with id 26 | 26         | {}          | delete | 200    | responseRecordDeleted   |
       | 02) Add pet with id 27        | ''         | jsonData[0] | post   | 200    | responseStatusAvailable |
       | 03) Add pet with id 10        | ''         | jsonData[4] | post   | 200    | responseStatusAvailable |
+      | 04) Add pet with id 33        | ''         | jsonData[1] | post   | 200    | responseStatusAvailable |
 
   @Scenario2
   Scenario: Inquire the pet with id 27

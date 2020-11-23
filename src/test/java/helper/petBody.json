@@ -18,22 +18,22 @@
     "status": "available"
   },
   {
-    "photoUrls": [
-      "#ignore"
-    ],
-    "name": "Cow",
-    "id": 5,
+    "id": 33,
+    "name": "Kraken",
     "category": {
-      "name": "Cow",
-      "id": "#ignore"
+      "id": 5,
+      "name": "cow"
     },
+    "photoUrls": [
+      "string"
+    ],
     "tags": [
       {
-        "name": "#ignore",
-        "id": "#ignore"
+        "id": 0,
+        "name": "string"
       }
     ],
-    "status": "#ignore"
+    "status": "available"
   },
   {
     "id": 26,
