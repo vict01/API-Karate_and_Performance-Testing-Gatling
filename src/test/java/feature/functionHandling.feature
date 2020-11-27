@@ -4,7 +4,7 @@ Feature: Function handling test
     * def javaMethod = Java.type('helper.Methods')
     * def method = new javaMethod()
     * url 'https://petstore3.swagger.io/api/v3/pet/'
-    * def myFunction =
+    * def setDelay =
     """
     function(second){
        for(i=0; i<=second; i++){
@@ -21,7 +21,7 @@ Feature: Function handling test
     Given print printScenario
     When def CRUD_scenario = call read('CRUD_Testing.feature@Scenario4')
     Then match CRUD_scenario.response.status != null
-    * call myFunction 1
+    * call setDelay 1
 
   @Scenario8
   Scenario: Count the number of users in response
@@ -30,13 +30,13 @@ Feature: Function handling test
     Then status 200
     * def data = response.data
     And print '\n\nRetrieved data: \n', data
-    * def myFun =
+    * def getNumberOfUsers =
     """
     function(arg){
        return arg.length
     }
     """
-    * def numberOfUsers = call myFun data
+    * def numberOfUsers = call getNumberOfUsers data
     Then print '\n\nThe number of users is:\n', numberOfUsers, '\n\n'
 
   @Scenario9
@@ -46,7 +46,7 @@ Feature: Function handling test
     Then status 200
     * def data = response.data
     And print '\n\nRetrieved entire data: \n', data
-    * def myFun =
+    * def getUserById =
     """
     function(arg){
        for(i=0; i<arg.length; i++){
@@ -54,9 +54,9 @@ Feature: Function handling test
             return arg[i];
           }
        }
+       return "There's no user with Id " + userId;
     }
     """
     * def userId = 9
-    * def result = call myFun data
+    * def result = call getUserById data
     Then print '\n\nThe found user is:\n', result, '\n\n'
-
