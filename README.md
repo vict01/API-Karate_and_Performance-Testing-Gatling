@@ -13,6 +13,9 @@ The test scope encompasses testing each type of methods for Pet information.
   - helper folder:
     Contains the data and methods used in testing, as well a JSON file as external file against which is validated some outcomes or used as input data as appropriate. 
 
+  - performanceTesting folder:
+    Contains the Scala class necessary to run the performance testing in Gatling.
+    
   - TestRunner class:
     Contains the runner class through which we can generate a cucumber report (overview-features.html) after running it.
     Also, it enables to run all features simultaneously and skip some scenario as appropriate. 
@@ -45,7 +48,7 @@ In this framework we used different components, which we break them down below w
 1. In the project panel, right click on TestRunner class, pick up "Run TestRunner".
    Besides, in some IDE within the Java class you can see a run symbol (button) next to the statements "public class <className>" through which you can execute the class.
 
-2. Once test finish running, you'll be able to see the symbols/mark corresponding to failed / successful / warning
+2. In the Run Panel below, you can see the log messages while testing run, once test finish running, you'll be able to see the symbols/mark corresponding to failed / successful / warning
    in the left Junit panel, according to the results obtained in general. 
    As well within the console log output, at the end of each feature run you can see a section with a summary result for such a feature.
 
@@ -74,3 +77,14 @@ In this framework we used different components, which we break them down below w
 
 ### To prevent any scenario  from running in parallel when runner class is executed:
 1. Go to the scenario which you want to prevent from running in parallel and place on the top of it the tag "@parallel=false".
+
+### To run the automated performance testing
+1. In the maven panel (or by creating a customized runner configuration) launch the following command:  
+    `mvn clean test-compile gatling:test`
+    
+2. In the Run Panel below, you can see the log messages while testing run, once test finish running, you'll be able to see the symbols/mark corresponding to failed / successful / warning
+   in the left Junit panel, according to the results obtained in general. 
+   
+3. To see a readable and graphical report in HTML about testing result, just go to the "target/gatling/<Scala class name + timeStamp>/index.html
+
+4. Open the index.html with any web browser. 

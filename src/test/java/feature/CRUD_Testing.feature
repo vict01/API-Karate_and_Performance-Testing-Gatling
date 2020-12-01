@@ -1,3 +1,4 @@
+@ignore
 Feature: Test of PetStore API
 
   Background:

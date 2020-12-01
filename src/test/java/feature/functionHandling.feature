@@ -1,3 +1,4 @@
+@ignore
 Feature: Function handling test
 
   Background:
