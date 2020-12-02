@@ -20,6 +20,7 @@ The test scope encompasses testing each type of methods for Pet information.
     Contains the runner class through which we can generate a cucumber report (overview-features.html) after running it.
     Also, it enables to run all features simultaneously and skip some scenario as appropriate. 
 
+
 * In the root path of the project:
   
   In general there are the configuration files within which the most important are:
@@ -34,12 +35,20 @@ In this framework we used different components, which we break them down below w
 ```
 1. Karate: Framework that allows the API test-automation.
 2. Cucumber: BBD tool which provides a logical language that customers can understand.
-3. Java: Programing language to coding and build the test logic.
-4. JavaScript: Scripting language to handle js and json files, as well to build functions within features files.
-5. JUnit: The framework to create, organize and execute tests.
-6. Maven: The software application that allows packaging and manage dependencies.
-7. jetty server: Web server and javax.servlet container (only if you decide to use http://localhost:8080/api/v3/openapi.json 
+3. Gatling: The load and performance testing framework
+4. JUnit: The framework to create, organize and execute tests.
+5. Maven: The software application that allows packaging and manage dependencies.
+6. jetty server: Web server and javax.servlet container (only if you decide to use http://localhost:8080/api/v3/openapi.json 
                  instead of https://petstore3.swagger.io/api/v3/openapi.json)
+```
+
+## Programming Languages that make up the project:
+In this framework we used different languages, which we break them down below with its respective descriptions:
+```
+1. Gherkin: Line-oriented language to describe BDD-scenarios used within features files.
+2. Java: Programing language to coding and build the test logic outside features files.
+3. JavaScript: Scripting language to handle js and json files, as well to build functions within features files.
+4. Scala: object-oriented and functional programming languages used here to handle performance testing.
 ```
 
 ## Instructions to run the tests and review test results:
@@ -85,6 +94,6 @@ In this framework we used different components, which we break them down below w
 2. In the Run Panel below, you can see the log messages while testing run, once test finish running, you'll be able to see the symbols/mark corresponding to failed / successful / warning
    in the left Junit panel, according to the results obtained in general. 
    
-3. To see a readable and graphical report in HTML about testing result, just go to the "target/gatling/<Scala class name + timeStamp>/index.html
+3. To see a readable and graphical report in HTML about testing result, just go to the "target/gatling/<Scala class name + timeStamp>/index.html"
 
 4. Open the index.html with any web browser. 
